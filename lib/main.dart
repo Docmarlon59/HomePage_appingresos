@@ -51,24 +51,28 @@ class _MyHomePageState extends State<MyHomePage> {
       height: 150.0,
       margin: EdgeInsets.all(10.0),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.black87, width: 2.0),
+          border: Border.all(color: Colors.black54, width: 2.0),
           borderRadius: BorderRadius.all(Radius.circular(20.0)),
           image: DecorationImage(
               image: ExactAssetImage(asset), fit: BoxFit.cover)),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              '      $texto',
-              style: TextStyle(
+      child: FlatButton(
+        onPressed: (){},
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                '      $texto',
+                style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 20.0,
-                  fontStyle: FontStyle.italic),
+                  fontStyle: FontStyle.italic
+                ),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
